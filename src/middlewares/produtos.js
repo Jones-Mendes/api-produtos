@@ -6,12 +6,12 @@ function validateCreateProduto(req, res, next) {
     .send('Todos os campos são obrigatorios' );
   }
 
-  if (nome.length <100) {
+  if (nome.length >100) {
     return res.status(400)
     .send('O nome do produto não pode ter mais de 100 caracteres' );
   }
 
-  if (categoria.length < 50) {
+  if (categoria.length > 50) {
     return res.status(400)
     .send('A categoria do produto não pode ter mais de 50 caracteres');
   }

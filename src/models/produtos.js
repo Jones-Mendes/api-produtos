@@ -15,7 +15,7 @@ const Produtos = sequelize.define('Produtos', {
         allowNull: false
     },
     categoria: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.STRING,
         allowNull: false
     },
     image_url: {

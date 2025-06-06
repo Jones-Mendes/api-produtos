@@ -10,5 +10,6 @@ sequelize.sync({alter: true})
         console.error('Erro ao sicronizar tabelas', error);
     })
 module.exports = {
-    Users
+    Users,
+    Produtos
 };
