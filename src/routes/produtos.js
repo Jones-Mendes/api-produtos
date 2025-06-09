@@ -11,12 +11,14 @@ router.get(
 );
 router.post(
   "/produtos",
+  authMiddleware.validateToken,
   produtosMiddleware.validateCreateProduto,
   produtoController.createProduto
 );
 
 router.delete(
   "/produtos/:id",
+  authMiddleware.validateToken,
   produtosMiddleware.validateDeleteProduto,
   produtoController.deleteProduto
 );
